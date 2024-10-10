@@ -43,6 +43,7 @@ export default function Clients() {
               height="70"
               alt={client.name}
               className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+              key={client.name}
             />
           ))}
         </div>

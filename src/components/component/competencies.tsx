@@ -7,51 +7,53 @@ export default function Competencies() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Our Core Competencies
+              Unsere Kernkompetenzen
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-              At Acme Software, we specialize in delivering cutting-edge
-              software solutions that empower our clients to achieve their
-              business goals. Our core competencies include:
+              Bei der dansys GmbH bieten wir maßgeschneiderte IT-Lösungen, die
+              auf die individuellen Anforderungen unserer Kunden abgestimmt
+              sind. Unsere Kernkompetenzen umfassen:
             </p>
             <ul className="grid gap-4">
               <li className="flex items-start gap-2">
                 <FaCheck className="w-5 h-5 text-primary mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold">Web Development</h3>
+                  <h3 className="text-xl font-bold">Analyse und Konzeption</h3>
                   <p className="text-muted-foreground">
-                    Crafting modern, responsive, and user-friendly web
-                    applications.
+                    Wir analysieren Ihre Geschäftsanforderungen und entwerfen
+                    maßgeschneiderte IT-Lösungen für komplexe Projekte.
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-2">
                 <FaCheck className="w-5 h-5 text-primary mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold">Mobile Development</h3>
+                  <h3 className="text-xl font-bold">
+                    Implementierung und Entwicklung
+                  </h3>
                   <p className="text-muted-foreground">
-                    Developing high-performance, feature-rich mobile apps for
-                    iOS and Android.
+                    Entwicklung von sicheren und skalierbaren IT-Systemen mit
+                    modernen Technologien.
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-2">
                 <FaCheck className="w-5 h-5 text-primary mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold">Cloud Solutions</h3>
+                  <h3 className="text-xl font-bold">Betrieb und Wartung</h3>
                   <p className="text-muted-foreground">
-                    Leveraging cloud technologies to build scalable and secure
-                    infrastructure.
+                    Sicherstellung des reibungslosen Betriebs und Wartung
+                    kritischer Systeme.
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-2">
                 <FaCheck className="w-5 h-5 text-primary mt-1" />
                 <div>
-                  <h3 className="text-xl font-bold">Data Analytics</h3>
+                  <h3 className="text-xl font-bold">Qualitätssicherung</h3>
                   <p className="text-muted-foreground">
-                    Transforming data into actionable insights to drive business
-                    decisions.
+                    Durchführung strenger Tests zur Sicherstellung der höchsten
+                    Qualitätsstandards.
                   </p>
                 </div>
               </li>

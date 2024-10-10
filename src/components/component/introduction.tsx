@@ -1,3 +1,6 @@
+import { BlurText } from "@/components/ui/blurtext";
+import GradientText from "@/components/ui/gradienttext";
+
 export default function Introduction() {
   return (
     <section className="bg-background py-12 md:py-24 lg:py-32">
@@ -5,13 +8,18 @@ export default function Introduction() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Innovative Software Solutions
+              <BlurText
+                text="Ihre Experten für innovative IT-Systemlösungen."
+                delay={35}
+                className=""
+              />
             </h1>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-              Acme Software is a leading software development company dedicated
-              to creating cutting-edge solutions that drive business success.
-              Our team of experts specializes in delivering tailored software
-              products and services to clients across various industries.
+              dansys GmbH ist seit über zwei Jahrzehnten Ihr zuverlässiger
+              Partner in der Entwicklung unternehmenskritischer IT-Systeme.
+              Vertrauen Sie auf unser erfahrenes Team und unsere
+              maßgeschneiderten Lösungen für Branchen wie Medizin,
+              Telekommunikation, Banken und öffentliche Verwaltung.
             </p>
           </div>
           <img

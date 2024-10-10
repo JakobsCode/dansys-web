@@ -7,33 +7,34 @@ import {
 
 const services = [
   {
-    title: "Web Development",
+    title: "IT-Consulting",
     description:
-      "Crafting modern, responsive, and user-friendly web applications.",
+      "Beratung und Entwicklung maßgeschneiderter IT-Lösungen für Ihr Unternehmen.",
   },
   {
-    title: "Mobile Development",
+    title: "Systemintegration",
     description:
-      "Developing high-performance, feature-rich mobile apps for iOS and Android.",
+      "Implementierung und nahtlose Integration von unternehmenskritischen IT-Systemen.",
   },
   {
-    title: "Cloud Solutions",
+    title: "Cloud-Lösungen",
     description:
-      "Leveraging cloud technologies to build scalable and secure infrastructure.",
+      "Skalierbare und sichere Cloud-Infrastrukturen zur Unterstützung Ihres Geschäfts.",
   },
   {
-    title: "Data Analytics",
+    title: "Softwareentwicklung",
     description:
-      "Transforming data into actionable insights to drive business decisions.",
+      "Individuelle Softwarelösungen, die speziell auf Ihre Geschäftsanforderungen zugeschnitten sind.",
   },
   {
-    title: "UX/UI Design",
-    description: "Creating intuitive and visually appealing user experiences.",
+    title: "Qualitätssicherung",
+    description:
+      "Umfassende Test- und QA-Services zur Sicherstellung hoher Softwarequalität.",
   },
   {
-    title: "DevOps Consulting",
+    title: "Projektmanagement",
     description:
-      "Optimizing your software development and deployment processes.",
+      "Effiziente Planung, Steuerung und Durchführung von IT-Projekten mit höchster Präzision.",
   },
 ];
 
@@ -43,18 +44,18 @@ export default function Services() {
       <div className="container px-4 md:px-6 max-w-6xl mx-auto">
         <div className="space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Our Services
+            Unsere Dienstleistungen
           </h2>
           <p className="max-w-[600px] mx-auto text-muted-foreground md:text-xl/relaxed">
-            Acme Software offers a wide range of services to help our clients
-            achieve their business goals. From custom software development to
-            cloud-based solutions, we have the expertise to deliver exceptional
-            results.
+            Die dansys GmbH bietet ein breites Spektrum an Dienstleistungen, um
+            Ihre IT-Anforderungen effizient und nachhaltig zu erfüllen. Von der
+            Beratung bis hin zur Umsetzung komplexer Systeme – wir begleiten Sie
+            in jeder Phase.
           </p>
         </div>
         <div className="grid gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <Card className="bg-muted p-6 rounded-xl">
+            <Card className="bg-muted p-6 rounded-xl" key={service.title}>
               <CardHeader>
                 <CardTitle>{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>
