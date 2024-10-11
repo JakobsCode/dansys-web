@@ -9,7 +9,7 @@ const stories = [
   {
     title: "2000 - Erste große Kundenprojekte",
     description:
-      "Schon im ersten Jahr konnten wir uns durch Projekte mit renommierten Kunden wie T-Mobile etablieren.",
+      "Schon im ersten Jahr konnten wir uns durch Projekte mit renommierten Kunden wie T-Mobile (heute Deutsche Telekom) etablieren.",
   },
   {
     title: "2010 - Ausbau der freiberuflichen Experten",
