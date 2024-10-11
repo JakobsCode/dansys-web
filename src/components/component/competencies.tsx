@@ -1,4 +1,61 @@
 import { FaCheck } from "react-icons/fa6";
+import { IconCloud } from "../ui/iconcloud";
+
+const skills = [
+  {
+    title: "Analyse und Konzeption",
+    description:
+      "Wir analysieren Ihre Geschäftsanforderungen und entwerfen maßgeschneiderte IT-Lösungen für komplexe Projekte.",
+  },
+  {
+    title: "Implementierung und Entwicklung",
+    description:
+      "Entwicklung von sicheren und skalierbaren IT-Systemen mit modernen Technologien.",
+  },
+  {
+    title: "Betrieb und Wartung",
+    description:
+      "Sicherstellung des reibungslosen Betriebs und Wartung kritischer Systeme.",
+  },
+  {
+    title: "Qualitätssicherung",
+    description:
+      "Durchführung strenger Tests zur Sicherstellung der höchsten Qualitätsstandards.",
+  },
+];
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
 
 export default function Competencies() {
   return (
@@ -15,57 +72,20 @@ export default function Competencies() {
               sind. Unsere Kernkompetenzen umfassen:
             </p>
             <ul className="grid gap-4">
-              <li className="flex items-start gap-2">
-                <FaCheck className="w-5 h-5 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold">Analyse und Konzeption</h3>
-                  <p className="text-muted-foreground">
-                    Wir analysieren Ihre Geschäftsanforderungen und entwerfen
-                    maßgeschneiderte IT-Lösungen für komplexe Projekte.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheck className="w-5 h-5 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold">
-                    Implementierung und Entwicklung
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Entwicklung von sicheren und skalierbaren IT-Systemen mit
-                    modernen Technologien.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheck className="w-5 h-5 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold">Betrieb und Wartung</h3>
-                  <p className="text-muted-foreground">
-                    Sicherstellung des reibungslosen Betriebs und Wartung
-                    kritischer Systeme.
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <FaCheck className="w-5 h-5 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold">Qualitätssicherung</h3>
-                  <p className="text-muted-foreground">
-                    Durchführung strenger Tests zur Sicherstellung der höchsten
-                    Qualitätsstandards.
-                  </p>
-                </div>
-              </li>
+              {skills.map((skill) => (
+                <li className="flex items-start gap-2">
+                  <FaCheck className="w-5 h-5 text-primary mt-1" />
+                  <div>
+                    <h3 className="text-xl font-bold">{skill.title}</h3>
+                    <p className="text-muted-foreground">{skill.description}</p>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
-          <img
-            src="/placeholder.svg"
-            width="550"
-            height="310"
-            alt="Services"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-          />
+          <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+            <IconCloud iconSlugs={slugs} />
+          </div>
         </div>
       </div>
     </section>
