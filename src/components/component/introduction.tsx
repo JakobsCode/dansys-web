@@ -21,12 +21,17 @@ export default function Introduction() {
               Telekommunikation, Banken und öffentliche Verwaltung.
             </p>
           </div>
-          <img
-            src="/masoud.jpeg"
-            width={400}
-            alt="Geschäftsführer Masoud Danaei"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center lg:w-full"
-          />
+          <div>
+            <img
+              src="/masoud.jpeg"
+              width={400}
+              alt="Geschäftsführer Masoud Danaei"
+              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center lg:w-full"
+            />
+            <div className="text-center mt-4">
+              Geschäftsführer Masoud Danaei
+            </div>
+          </div>
         </div>
       </div>
     </section>
