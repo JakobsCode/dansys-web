@@ -8,7 +8,6 @@ import Logo from "@/components/component/logo";
 
 const headerLinks = [
   { label: "Home", to: "/" },
-  { label: "Kontakt", to: "/contact" },
   { label: "Impressum", to: "/about" },
 ];
 
