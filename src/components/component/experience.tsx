@@ -44,8 +44,7 @@ const TiltedExperienceScroll = () => {
             <experience.icon className="h-6 w-6" />
           </div>
           <div>
-            <h3 className="text-lg font-semibold">Erfahrung</h3>
-            <p className="text-muted-foreground">in {experience.description}</p>
+            <h3 className="text-lg font-semibold">{experience.description}</h3>
           </div>
         </div>
       ))}

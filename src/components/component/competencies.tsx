@@ -73,7 +73,7 @@ export default function Competencies() {
             </p>
             <ul className="grid gap-4">
               {skills.map((skill) => (
-                <li className="flex items-start gap-2">
+                <li className="flex items-start gap-2" key={skill.title}>
                   <FaCheck className="w-5 h-5 text-primary mt-1" />
                   <div>
                     <h3 className="text-xl font-bold">{skill.title}</h3>
