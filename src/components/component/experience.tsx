@@ -8,49 +8,44 @@ import { CiPower } from "react-icons/ci";
 const TiltedExperienceScroll = () => {
   const experiences = [
     {
-      count: 25,
       description: "Webentwicklung",
       icon: CiCalendar,
     },
     {
-      count: 5,
       description: "Datenbankadministration",
       icon: CiDatabase,
     },
     {
-      count: 8,
       description: "Softwareentwicklung",
       icon: HiCodeBracket,
     },
     {
-      count: 6,
       description: "Cloud-Lösungen",
       icon: CiCloudRainbow,
     },
     {
-      count: 7,
       description: "Netzwerktechnik",
       icon: PiNetworkLight,
     },
     {
-      count: 9,
       description: "Kundenservice",
       icon: CiPower,
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-4">
+    <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-4 justify-center mx-auto">
       {experiences.map((experience) => (
-        <div className="flex items-center gap-4" key={experience.description}>
+        <div
+          className="bg-background flex items-center max-h-min max-w-xs p-4 rounded-2xl gap-4"
+          key={experience.description}
+        >
           <div className="bg-muted rounded-md flex items-center justify-center aspect-square w-12">
             <experience.icon className="h-6 w-6" />
           </div>
           <div>
-            <h3 className="text-lg font-semibold">
-              {experience.count} Jahre Erfahrung
-            </h3>
-            <p className="text-muted-foreground">{experience.description}</p>
+            <h3 className="text-lg font-semibold">Erfahrung</h3>
+            <p className="text-muted-foreground">in {experience.description}</p>
           </div>
         </div>
       ))}

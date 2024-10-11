@@ -2,30 +2,35 @@ import TiltedExperienceScroll from "@/components/component/experience";
 
 const stories = [
   {
-    title: "2012 - Gründung des Unternehmens",
+    title: "1999 - Gründung der dansys GmbH",
     description:
-      "Mit der Vision, innovative IT-Lösungen zu entwickeln, wurde unser Unternehmen gegründet.",
+      "Masoud Danaei gründete dansys GmbH in Aachen, mit dem Fokus auf IT-Consulting und der Entwicklung hochwertiger IT-Systeme.",
   },
   {
-    title: "2015 - Erste große Projekte",
+    title: "2000 - Erste große Kundenprojekte",
     description:
-      "Wir konnten unsere ersten großen Kunden gewinnen und erfolgreich Projekte umsetzen.",
+      "Schon im ersten Jahr konnten wir uns durch Projekte mit renommierten Kunden wie T-Mobile etablieren.",
   },
   {
-    title: "2018 - Erweiterung des Teams",
+    title: "2010 - Ausbau der freiberuflichen Experten",
     description:
-      "Um das Wachstum zu unterstützen, haben wir unser Team deutlich erweitert.",
+      "Unser Team erweiterte sich durch den Zuwachs von über 20 hochqualifizierten freiberuflichen Experten, die mit uns eng zusammenarbeiten.",
   },
   {
-    title: "2021 - Umzug in neue Büroräume",
+    title: "2018 - Branchenübergreifende Expansion",
     description:
-      "Mit dem Umzug in unsere neuen, modernen Büroräume konnten wir unsere Kapazitäten weiter ausbauen.",
+      "Wir haben unsere Expertise in den Bereichen Medizin, Telekommunikation, Versicherungen, Banken und öffentlicher Verwaltung weiter ausgebaut.",
+  },
+  {
+    title: "2022 - Erfolgreiche Großprojekte mit Partnern",
+    description:
+      "Mit langjährigen Partnern wie Sopra Steria, T-System, BearingPoint und aus dem öffentlichen Dienst haben wir komplexe Projekte erfolgreich umgesetzt und unser Portfolio erweitert.",
   },
 ];
 
 export function SuccessStory() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="bg-muted w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 max-w-6xl mx-auto">
         <div className="grid gap-6 md:grid-cols-1 md:gap-12 lg:grid-cols-2">
           <div className="space-y-4">
@@ -34,7 +39,7 @@ export function SuccessStory() {
                 Unsere Erfolgsgeschichte
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Seit über 10 Jahren sind wir im IT-Bereich tätig und haben uns
+                Seit über 25 Jahren sind wir im IT-Bereich tätig und haben uns
                 zu einem der führenden Unternehmen in der Region entwickelt.
                 Erfahren Sie mehr über unseren Werdegang.
               </p>

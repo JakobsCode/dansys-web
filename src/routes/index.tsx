@@ -16,9 +16,8 @@ function Index() {
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
         <Introduction />
-        <Competencies />
         <SuccessStory />
-        <Services />
+        <Competencies />
         <Clients />
         <Footer />
       </main>

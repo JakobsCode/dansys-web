@@ -1,5 +1,4 @@
 import { BlurText } from "@/components/ui/blurtext";
-import GradientText from "@/components/ui/gradienttext";
 
 export default function Introduction() {
   return (
@@ -23,11 +22,10 @@ export default function Introduction() {
             </p>
           </div>
           <img
-            src="/placeholder.svg"
-            width="550"
-            height="310"
-            alt="Hero"
-            className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+            src="/masoud.jpeg"
+            width={400}
+            alt="Geschäftsführer Masoud Danaei"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center lg:w-full"
           />
         </div>
       </div>
